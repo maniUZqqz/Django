@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} mysterious {% endblock %}
+
+
+{% block link %}
+       <link rel="stylesheet" href="{% static 'mysterious/css/new.css' %}">
+{% endblock %}
+
+{% block body %}
+
+    <a href="{% url 'blog' %}">blog</a>
+
+    <div>
+        <h1>
+            nav
+        </h1>
+        <p>
+            mysterious
+        </p>
+        {% include "includes/nav.html" %}
+    </div>
+
+
+{% endblock %}

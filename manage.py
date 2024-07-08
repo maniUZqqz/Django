@@ -21,4 +21,4 @@ def main():
 if __name__ == '__main__':
     main()
 #python manage.py runserver
-#python manage.py startapp mysterious
+#python manage.py startapp blog

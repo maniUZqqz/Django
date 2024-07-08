@@ -22,7 +22,7 @@ def home(request):
 def Templates(request, day):
     day_data = Day.get(day)
     context = {
-        "day": day,
+        "day2": day,
         "day_data": day_data
     }
     return render(request, "UZ/t.html", context)
@@ -64,7 +64,7 @@ def list_day(request):
     for day in day_list:
         url_path = reverse('Number', args=[day])
         list_item += f"<li> <a href='{url_path}'> {day} </a> </li>\n"
-    meno = f"<ul> {list_item} </ul>"
+    meno = f" <div> <ul> {list_item} </ul></div>  "
     return HttpResponse(meno)
 
 

@@ -19,8 +19,11 @@ from django.urls import path, include
 from UZ import views
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', include('UZ.urls')),
-    path('', views.home),
+    path('mysterious/', include('mysterious.urls')),
+    path('blog/', include('blog.urls')),
+    path('', views.home, name='home'),
 ]

@@ -4,16 +4,18 @@
 
 {% block body %}
 
+<a href="{% url 'blog' %}">blog</a>
+
+{% include "includes/nav.html" %}
     <div>
     <p>
-    mani
-</p> <br>
+        MANI
+    </p> <br>
     <p>
-    {{day|title}}
-</p> <br>
+        {{day|title}}
+    </p> <br>
     <p>
-    {{day_data}}
+        {{day_data}}
 </p> <br>
 </div>
-
 {% endblock %}
