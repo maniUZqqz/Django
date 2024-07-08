@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} T {% endblock %}
+
+{% block body %}
+
+    <div>
+        {% if day is not None %}
+            <div>
+    <p>
+    QQZ
+</p>
+<a href="{% url 'Number' day=day %}"> mmmmmm </a>
+<br>
+<br>
+<div>
+    <p>
+        {{day}}
+    </p>
+    <br>
+    <p>
+        {{day_data|title}}
+    </p>
+</div>
+</div>
+        {% else %}
+            <p>
+    hi
+</p>
+        {% endif %}
+    </div>
+
+{% endblock %}
