@@ -2,13 +2,12 @@
 
 <li>
     <article class="post">
-        <a href="{% url 'single_post' slug='learning-django' %}">
-            <img src="{% static 'blog/images/blog/django.png' %}" alt="learning django">
+        <a href="{% url 'single_post' slug=post.slug %}">
+            <img src="{% static 'blog/images/blog/'|add:post.image %}" alt="learning django">
             <div class="post__content">
-                <h3>Learning Django</h3>
+                <h3>{{ post.title }}</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolore dolores
-                    ipsam itaque labore laudantium quo rem similique soluta voluptate?
+                    {{ post.data }}
                 </p>
             </div>
         </a>
