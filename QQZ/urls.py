@@ -24,6 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', include('UZ.urls')),
     path('mysterious/', include('mysterious.urls')),
-    path('blog/', include('blog.urls')),
-    path('', views.home, name='home'),
+    path('', include('blog.urls')),
+    # path('', views.home, name='home'),
 ]
